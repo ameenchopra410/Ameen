@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta name="google-site-verification" content="pR3tyRdAv_uCXg0D93ZsutJ3z9MGy6CXRoaLJwjwWVM" />
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; media-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Ameen Chopra is a web developer and Instagram manager. Websites, Instagram management and WebAR 3D menus for local businesses.">
-<title>Ameen Chopra · Web Developer &amp; Instagram Manager</title>
+<meta name="description" content="Websites, Instagram management and AR 3D menus for cafes, restaurants and local businesses in Malaysia. See services and pricing in RM.">
+<link rel="canonical" href="https://ameenchopra410.github.io/">
+<meta name="theme-color" content="#4C2A37">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ameen Chopra">
+<meta property="og:locale" content="en_MY">
+<meta property="og:title" content="Ameen Chopra | Web Developer &amp; Instagram Manager, Malaysia">
+<meta property="og:description" content="Websites, Instagram management and AR 3D menus for cafes, restaurants and local businesses in Malaysia. See services and pricing in RM.">
+<meta property="og:url" content="https://ameenchopra410.github.io/">
+<meta property="og:image" content="https://ameenchopra410.github.io/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ameen Chopra, web developer and Instagram manager in Malaysia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ameen Chopra | Web Developer &amp; Instagram Manager, Malaysia">
+<meta name="twitter:description" content="Websites, Instagram management and AR 3D menus for cafes, restaurants and local businesses in Malaysia. See services and pricing in RM.">
+<meta name="twitter:image" content="https://ameenchopra410.github.io/og-image.jpg">
+<title>Ameen Chopra | Web Developer &amp; Instagram Manager, Malaysia</title>
 <style>
 :root{--plum:#4C2A37;--cream:#FAF1E8;--tan:#CDC1AB;--line:rgba(76,42,55,.16);--soft:rgba(76,42,55,.07);
 --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -347,17 +363,19 @@ var hd=$('top');function sc(){hd.classList.toggle('sc',scrollY>8)}addEventListen
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
 d.querySelectorAll('[data-r]').forEach(function(el,n){el.style.transitionDelay=(n%3)*90+'ms';io.observe(el)});
 var L={privacy:'Privacy Policy',terms:'Terms & Conditions',cookies:'Cookie Policy','web-development':'Web Development','instagram-management':'Instagram Management','webar-3d-menu':'WebAR 3D Menu','graphic-design':'Graphic Design','digital-strategy':'Digital Strategy'},T=d.title;
-var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,view='';
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,view='';var TT={"": "Ameen Chopra | Web Developer & Instagram Manager, Malaysia", "web-development": "Web Development Services & Pricing | Ameen Chopra", "instagram-management": "Instagram Management Plans & Pricing | Ameen Chopra", "webar-3d-menu": "WebAR 3D Menu for Restaurants | Ameen Chopra", "graphic-design": "Graphic Design for Social Media & Branding | Ameen Chopra", "digital-strategy": "Digital Strategy & Basic SEO | Ameen Chopra", "privacy": "Privacy Policy | Ameen Chopra", "terms": "Terms & Conditions | Ameen Chopra", "cookies": "Cookie Policy | Ameen Chopra"},DD={"": "Websites, Instagram management and AR 3D menus for cafes, restaurants and local businesses in Malaysia. See services and pricing in RM.", "web-development": "Fast, mobile-friendly websites for local businesses in Malaysia. Packages from RM 800 to RM 12,000. See what is included.", "instagram-management": "Monthly Instagram management for cafes, restaurants and local businesses in Malaysia. Plans from RM 1,800 to RM 3,700 a month.", "webar-3d-menu": "Customers scan a QR code and see your dishes in 3D on their table. No app needed. AR menu packages from RM 1,700 to RM 4,500.", "graphic-design": "Social media posts, stories and visual branding for local businesses in Malaysia. From RM 500 to RM 1,500, based on the plan you need.", "digital-strategy": "Basic SEO, content planning and brand growth ideas to help your business get found online. From RM 599 to RM 1,300, based on your plan.", "privacy": "How this website handles your data. It sets no cookies and has no analytics. Notis Privasi in Bahasa Malaysia included.", "terms": "Terms for using the Ameen Chopra website: no guaranteed results, third-party platforms, intellectual property and Malaysian governing law.", "cookies": "This website uses no cookies and no tracking tools, so there is no cookie banner. Read the details here."},start=d.body.getAttribute("data-start")||"";
 function hh(){r.style.setProperty('--hh',hd.offsetHeight+'px')}hh();addEventListener('resize',hh);if(window.ResizeObserver)new ResizeObserver(hh).observe(hd);
 function toId(id,smooth){var el=$(id);if(!el)return;var y=id==='home'?0:el.getBoundingClientRect().top+pageYOffset-hd.getBoundingClientRect().bottom;scrollTo({top:Math.max(0,Math.round(y)),behavior:smooth&&!rm?'smooth':'instant'})}
-function show(id){view=id;d.body.classList.toggle('paged',!!id);d.querySelectorAll('.pg').forEach(function(m){m.classList.toggle('on',m.id===id)});d.title=id?L[id]+' \u00b7 Ameen Chopra':T}
+function show(id){view=id;d.body.classList.toggle('paged',!!id);d.querySelectorAll('.pg').forEach(function(m){m.classList.toggle('on',m.id===id)});d.title=TT[id]||T;var md=d.querySelector('meta[name=description]');if(md)md.setAttribute('content',DD[id]||DD[''])}
 function setHash(h,push){try{history[push?'pushState':'replaceState'](null,'','#'+h)}catch(x){try{if(push)location.hash=h}catch(y){}}}
 function openPage(h){show(h);scrollTo({top:0,behavior:'instant'});var m=$(h);m&&m.focus({preventScroll:true});setHash(h,true)}
 function openSection(h){if(view){show('');requestAnimationFrame(function(){toId(h,false);setHash(h,true)})}else{toId(h,true);setHash(h,false)}}
 function route(){var h=location.hash.slice(1);
  if(L[h]){if(view!==h){show(h);scrollTo({top:0,behavior:'instant'})}}
+ else if(!h&&start){if(view!==start){show(start);scrollTo({top:0,behavior:'instant'})}}
  else if(view){show('');requestAnimationFrame(function(){toId(h||'home',false)})}}
 d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;var h=a.getAttribute('href').slice(1);if(!h||!$(h))return;e.preventDefault();if(L[h])openPage(h);else openSection(h)});
+if(start&&L[start]&&!location.hash)show(start);
 addEventListener('hashchange',route);addEventListener('popstate',route);route();
 var secs=['home','about','work','contact'].map(function(i){return $(i)}),links=d.querySelectorAll('nav a[data-s]');
 var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.setAttribute('aria-current',a.dataset.s===e.target.id?'true':'false')})}})},{rootMargin:'-45% 0px -50% 0px'});
